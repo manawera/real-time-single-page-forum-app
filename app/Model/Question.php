@@ -21,7 +21,7 @@ class Question extends Model
 
     public function replies()
     {
-        return $this->hasMany(Replay::class);
+        return $this->hasMany(Reply::class);
     }
 
     public function category()
