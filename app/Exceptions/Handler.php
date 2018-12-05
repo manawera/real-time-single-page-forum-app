@@ -61,7 +61,7 @@ class Handler extends ExceptionHandler
             return response()->json(['error' => 'Token is expired'], Response::HTTP_BAD_REQUEST);
         }
         elseif ($exception instanceof JWTException) {
-            return response()->json(['error' => 'There is not provided'], Response::HTTP_BAD_REQUEST);
+            return response()->json(['error' => 'Token is not provided'], Response::HTTP_BAD_REQUEST);
         }
         
 
